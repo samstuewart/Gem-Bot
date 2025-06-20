@@ -1,7 +1,8 @@
-💎 Gem Bot – A Lightweight LLM Chatbot Backend
+## Gem Bot – A Lightweight LLM Chatbot Backend
 Gem Bot is a simple and modular Flask-based chatbot backend that leverages Ollama’s Gemma:2B language model and LangChain to deliver natural and helpful responses. It exposes a REST API, making it easy to integrate with any frontend interface.
 
-✨ Features
+# Features
+
 Powered by Ollama + Gemma 2B local LLM
 
 LangChain integration with structured prompt and output parsing
@@ -12,64 +13,39 @@ API-ready for chat-based frontend integration
 
 Environment-based secure configuration
 
-🚀 Getting Started
-Clone the Repository
+# Getting Started
 
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/gem-bot.git
-cd gem-bot
-Set Up Virtual Environment
+Clone the repository and navigate to the project folder.
 
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install Dependencies
+Set up a Python virtual environment.
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Configure Environment Variables
+Install dependencies using pip install -r requirements.txt.
 
-Create a .env file:
+Create a .env file and add the following keys:
 
-bash
-Copy
-Edit
-touch .env
-Add the following keys:
-
-ini
-Copy
-Edit
 OPENAI_API_KEY=your_openai_key
+
 LANGCHAIN_API_KEY=your_langchain_key
+
 LANGCHAIN_PROJECT=GemBot
+
 LANGCHAIN_TRACING_V2=true
-Run the Server
 
-bash
-Copy
-Edit
-python app.py
-Your backend will be live at http://localhost:5000
+Run the server using python app.py.
 
-🧠 API Endpoints
+Your backend will be live at: http://localhost:5000
+
+# API Endpoints
+
 GET /
-
 Returns: { "message": "Chatbot backend is running!" }
 
 POST /chat
-
 Payload: { "message": "Your question here" }
-
 Returns: { "response": "Chatbot's reply" }
 
-🗂️ Project Structure
+# Project Structure
+
 bash
 Copy
 Edit
@@ -78,16 +54,6 @@ gem-bot/
 ├── requirements.txt     # Python dependencies
 ├── .env                 # Environment variables
 └── README.md            # Project documentation
-📄 License
+# License
 MIT License — Free to use and modify for personal or commercial projects.
-
-Let me know if you want this saved as a downloadable file.
-
-
-
-
-
-
-
-
 
