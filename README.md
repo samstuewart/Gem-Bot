@@ -1,7 +1,7 @@
-## Gem Bot – A Lightweight LLM Chatbot Backend
+# Gem Bot – A Lightweight LLM Chatbot Backend
 Gem Bot is a simple and modular Flask-based chatbot backend that leverages Ollama’s Gemma:2B language model and LangChain to deliver natural and helpful responses. It exposes a REST API, making it easy to integrate with any frontend interface.
 
-# Features
+## Features
 
 Powered by Ollama + Gemma 2B local LLM
 
@@ -13,7 +13,7 @@ API-ready for chat-based frontend integration
 
 Environment-based secure configuration
 
-# Getting Started
+## Getting Started
 
 Clone the repository and navigate to the project folder.
 
@@ -35,7 +35,7 @@ Run the server using python app.py.
 
 Your backend will be live at: http://localhost:5000
 
-# API Endpoints
+## API Endpoints
 
 GET /
 Returns: { "message": "Chatbot backend is running!" }
@@ -44,16 +44,6 @@ POST /chat
 Payload: { "message": "Your question here" }
 Returns: { "response": "Chatbot's reply" }
 
-# Project Structure
-
-bash
-Copy
-Edit
-gem-bot/
-├── app.py               # Main Flask app
-├── requirements.txt     # Python dependencies
-├── .env                 # Environment variables
-└── README.md            # Project documentation
-# License
+## License
 MIT License — Free to use and modify for personal or commercial projects.
 
